@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS Project</title>
+    <link rel="shortcut icon" href="./assets/asset 0.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="font-poppins">
+    <!-- navbar -->
+    <header>
+      <nav class="navbar h-[4.5rem] flex justify-between items-center p-4">
+        <div class="logo flex items-center gap-2">
+          <img src="./assets/asset 0.png" alt="" />
+          <p class="text-xl font-medium">ToDesktop</p>
+        </div>
+        <div class="options">
+          <ul class="gap-14 text-md font-medium hidden lg:flex">
+            <li class="hover:text-blue-500"><a href="#">Pricing</a></li>
+            <li class="hover:text-blue-500"><a href="#">Docs</a></li>
+            <li class="hover:text-blue-500"><a href="#">Changelog</a></li>
+            <li class="hover:text-blue-500"><a href="#">Blogs</a></li>
+            <li class="hover:text-blue-500"><a href="#">Login</a></li>
+          </ul>
+        </div>
+        <div class="electron-developer-button hidden lg:block">
+          <button
+            class="w-[16rem] flex justify-center items-center gap-2 border-2 border-[#adadad] p-2 rounded-lg hover:border-[#505050]"
+          >
+            <img src="./assets/asset 1.svg" alt="developer logo" />
+            Electron Developer
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="hamburger text-xl lg:hidden">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- main  -->
+    <main class="flex flex-col gap-12">
+      <!-- hero section -->
+      <section
+        id="hero-section"
+        class="h-auto flex flex-col items-center bg-gradient-to-b from-purple-50 via-orange-50 to-transparent gap-2"
+      >
+        <div
+          id="hero-div"
+          class="w-[100%] h-[40rem] lg:h-[35rem] lg:w-[50%] md:w-[75%] flex flex-col justify-evenly p-2 items-center"
+        >
+          <div
+            id="alert-button"
+            class="w-[85%] md:w-[20rem] flex justify-center items-center gap-2 font-medium bg-yellow-50 border-[1px] border-yellow-400 p-[2px] rounded-lg shadow-md hover:shadow-lg hover:-translate-y-1 transition"
+          >
+            <div
+              id="circle"
+              class="w-2 h-2 rounded-full bg-yellow-400 border-[1px] border-orange-600"
+            ></div>
+            <p class="text-yellow-600">
+              v0.21.1:
+              <span class="text-yellow-700">Find-in-page bug fixes</span>
+              <span
+                ><i
+                  class="fa-solid fa-arrow-right text-yellow-600 translate-x-1"
+                ></i
+              ></span>
+            </p>
+          </div>
+          <div
+            id="hero-main-features"
+            class="flex gap-4 text-slate-600 text-sm md:text-[1rem] md:gap-6 text-center"
+          >
+            <p><i class="fa-regular fa-file-code"></i> Code Optional</p>
+            <p>
+              <i class="fa-solid fa-hand-back-fist"></i> Drag & drop builder
+            </p>
+            <p><i class="fa-solid fa-laptop"></i> Windows, Mac, Linux</p>
+          </div>
+          <div
+            id="hero-main-text"
+            class="flex flex-col gap-8 text-center md:w-[95%] lg:w-[80%]"
+          >
+            <h1 class="text-4xl md:text-5xl font-bold leading-snug">
+              Web app to desktop app in minutes
+            </h1>
+            <p class="text-lg md:text-xl">
+              Take your web app codebase and transform it into a cross platform
+              desktop app with native functionality.
+            </p>
+          </div>
+          <div
+            id="hero-buttons"
+            class="flex w-[95%] flex-col gap-4 items-center md:flex-row md:justify-center"
+          >
+            <button
+              class="bg-blue-600 p-3 w-[85%] md:w-[15rem] rounded-lg text-white font-medium hover:bg-opacity-90 transition"
+            >
+              Download Now
+            </button>
+            <button
+              class="bg-white p-3 w-[85%] md:w-[10rem] rounded-lg text-black font-medium border-[2px] border-[#808080] hover:border-black"
+            >
+              Read Docs
+            </button>
+          </div>
+        </div>
+        <div id="apps-section" class="flex flex-col items-center gap-5">
+          <p class="flex items-center gap-2 font-medium text-lg">
+            <img src="./assets/asset 2.svg" alt="left arrow" />
+            APPS POWERED BY TODESKTOP
+            <img src="./assets/asset 2 flip.svg" alt="right arrow`" />
+          </p>
+          <div id="apps-image" class="w-[100%] grid gap-2 p-1">
+            <div id="first-row" class="flex gap-1">
+              <div><img src="./assets/asset 3.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 4.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 5.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 6.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 7.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 8.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 9.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 10.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 11.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 12.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 13.png" alt="app logo" /></div>
+            </div>
+            <div id="second-row" class="flex gap-1">
+              <div><img src="./assets/asset 14.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 15.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 16.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 17.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 18.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 19.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 20.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 21.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 22.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 23.png" alt="app logo" /></div>
+              <div><img src="./assets/asset 24.png" alt="app logo" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- step features -->
+      <section
+        id="step-section"
+        class="h-auto flex flex-col gap-12 p-4 items-center"
+      >
+        <h2 class="text-5xl font-medium">How it works</h2>
+        <div
+          id="step-feature-1"
+          class="h-auto flex flex-col gap-8 border-2 items-center p-4 rounded-lg md:flex-row"
+        >
+          <div id="step-feature-1-text" class="flex flex-col gap-8 p-4">
+            <span
+              class="w-[4rem] text-md bg-yellow-50 border-2 border-yellow-500 p-1 rounded-lg font-medium text-yellow-700"
+              >Step 1</span
+            >
+            <p class="text-3xl font-medium">
+              Bootstrap straight from your web app
+            </p>
+            <p class="text-lg lg:w-[75%]">
+              Copy and paste your web app url into ToDesktop. Customise your app
+              design, app icon and window frame UI with no code.
+            </p>
+            <div id="feature" class="flex justify-start gap-8">
+              <ul class="grid gap-2 text-lg">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+              </ul>
+              <ul class="grid gap-2 text-lg">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="./assets/asset 66.svg" alt="" />
+        </div>
+
+        <div
+          id="step-feature-1"
+          class="h-auto flex flex-col gap-8 border-2 items-center p-4 rounded-lg md:flex-row"
+        >
+          <div id="step-feature-1-text" class="flex flex-col gap-8 p-4">
+            <span
+              class="w-[4rem] text-md bg-yellow-50 border-2 border-yellow-500 p-1 rounded-lg font-medium text-yellow-700"
+              >Step 2</span
+            >
+            <p class="text-3xl font-medium">
+              Bootstrap straight from your web app
+            </p>
+            <p class="text-lg lg:w-[75%]">
+              Copy and paste your web app url into ToDesktop. Customise your app
+              design, app icon and window frame UI with no code.
+            </p>
+            <div id="feature" class="flex justify-start gap-8">
+              <ul class="grid gap-2 text-lg">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+              </ul>
+              <ul class="grid gap-2 text-lg">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="./assets/asset 66.svg" alt="" />
+        </div>
+
+        <div
+          id="step-feature-1"
+          class="h-auto flex flex-col gap-8 border-2 items-center p-4 rounded-lg md:flex-row"
+        >
+          <div id="step-feature-1-text" class="flex flex-col gap-8 p-4">
+            <span
+              class="w-[4rem] text-md bg-yellow-50 border-2 border-yellow-500 p-1 rounded-lg font-medium text-yellow-700"
+              >Step 3</span
+            >
+            <p class="text-3xl font-medium">
+              Bootstrap straight from your web app
+            </p>
+            <p class="text-lg lg:w-[75%]">
+              Copy and paste your web app url into ToDesktop. Customise your app
+              design, app icon and window frame UI with no code.
+            </p>
+            <div id="feature" class="flex justify-start gap-8">
+              <ul class="grid gap-2 text-lg">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+              </ul>
+              <ul class="grid gap-2 text-lg">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  <a href="#"> Multiple Windows </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img src="./assets/asset 66.svg" alt="" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
